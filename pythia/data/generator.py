@@ -133,11 +133,11 @@ def generate_sample(config, alphabet, texts, idx=None, eos=False, pad=False, is_
     # pad sequences
     if pad:
       x_idx = np.pad(x_idx, (0, config.context_char_max - x_idx.size), 'constant',
-                     constant_values=(None, alphabet.eos_idx))
+                     constant_values=(0, alphabet.eos_idx))
       x_word_idx = np.pad(x_word_idx, (0, config.context_char_max - x_word_idx.size), 'constant',
-                          constant_values=(None, alphabet.eos_idx))
+                          constant_values=(0, alphabet.eos_idx))
       y_idx = np.pad(y_idx, (0, config.pred_char_max - y_idx.size + 1), 'constant',
-                     constant_values=(None, alphabet.eos_idx))
+                     constant_values=(0, alphabet.eos_idx))
 
     break
 
