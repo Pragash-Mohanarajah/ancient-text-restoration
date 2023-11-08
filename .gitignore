@@ -11,3 +11,5 @@ __pycache__/
 /data/
 .idea
 pythia/data/datasets
+pythia/colabs/datasets
+pythia/colabs/model*
