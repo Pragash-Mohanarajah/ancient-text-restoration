@@ -10,7 +10,6 @@ __pycache__/
 /tf/
 /data/
 .idea
-pythia/data/datasets
-pythia/data/phi
-pythia/colabs/datasets
-pythia/colabs/model*
+pythia/*/datasets*
+pythia/*/model*
+pythia/*/*.zip
